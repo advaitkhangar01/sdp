@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SDP Associates | Nagpur</title>
+    <meta name="description" content="Comprehensive construction and turnkey solutions by SDP Associates Nagpur. Residential, commercial, interiors, and project management.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
+    <style>
+        .services-deep-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .service-detail-card {
+            background: white;
+            padding: 50px;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+        }
+        .service-detail-card:hover {
+            box-shadow: 0 30px 60px rgba(74, 82, 64, 0.1);
+            border-color: var(--primary-olive);
+        }
+        .service-detail-card h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: var(--primary-olive);
+        }
+        .service-detail-card ul {
+            list-style: none;
+            margin-top: 25px;
+        }
+        .service-detail-card li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+        }
+        .service-detail-card li::before {
+            content: '→';
+            color: var(--accent-tan);
+            font-weight: bold;
+        }
+        .why-choose-us {
+            background-image: url('assets/img/services_accent.png');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            color: white;
+        }
+        .why-choose-us::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 15, 13, 0.9);
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .why-card {
+            text-align: center;
+        }
+        .why-card h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--accent-tan);
+        }
+        @media (max-width: 768px) {
+            .services-deep-grid, .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    <div class="custom-cursor"></div>
+
+    <!-- NAVIGATION -->
+        <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="SDP Associates Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <a href="index.html#contact" class="btn btn-primary cta-btn">Get a Quote</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="inner-page-hero">
+            <div class="inner-hero-bg">
+                <img src="assets/img/services_hero.png" alt="SDP Services">
+                <div class="hero-overlay" style="background: linear-gradient(to top, rgba(15, 15, 13, 1) 0%, rgba(15, 15, 13, 0.4) 100%);"></div>
+            </div>
+            <div class="container inner-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Services</span>
+                </div>
+                <h1>What We Build</h1>
+                <p class="subhead" style="max-width: 600px; margin: 0 auto; opacity: 0.8;">End-to-end expertise across the construction lifecycle.</p>
+            </div>
+        </section>
+
+        <!-- SERVICES DEEP DIVE -->
+        <section class="page-section">
+            <div class="container">
+                <div class="services-header reveal-up" style="text-align: center; margin-bottom: 80px;">
+                    <span class="overline">Our Expertise</span>
+                    <h2>Comprehensive <br>Building Solutions</h2>
+                </div>
+
+                <div class="services-deep-grid">
+                    <!-- Card 1 -->
+                    <div class="service-detail-card reveal-up">
+                        <h3>Turnkey Projects</h3>
+                        <p>We take full responsibility for your project from the initial sketch to the final handshake. Our turnkey solutions provide absolute peace of mind.</p>
+                        <ul>
+                            <li>Complete Project Lifecycle Management</li>
+                            <li>Architectural & Structural Integration</li>
+                            <li>Material Procurement & Vendor Liaison</li>
+                            <li>Rigorous Quality Control & Handover</li>
+                        </ul>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-detail-card reveal-up">
+                        <h3>Residential Build</h3>
+                        <p>Creating homes that are as strong as they are beautiful. We specialize in bespoke villas, luxury apartments, and independent row houses.</p>
+                        <ul>
+                            <li>Custom Architectural Design</li>
+                            <li>Structural Engineering Excellence</li>
+                            <li>Premium Interior & Exterior Finishes</li>
+                            <li>Sustainable & Modern Living Solutions</li>
+                        </ul>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-detail-card reveal-up">
+                        <h3>Commercial Spaces</h3>
+                        <p>Building functional, aesthetic, and scalable commercial infrastructures for businesses, retail, and offices.</p>
+                        <ul>
+                            <li>Commercial Complex Development</li>
+                            <li>Office Space Planning & Build</li>
+                            <li>Retail & Showroom Construction</li>
+                            <li>Structural Retrofitting & Expansion</li>
+                        </ul>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="service-detail-card reveal-up">
+                        <h3>Interior Works</h3>
+                        <p>Transforming shells into soulful spaces. Our interior team balances aesthetics with ergonomics and durability.</p>
+                        <ul>
+                            <li>Residential & Commercial Interiors</li>
+                            <li>Custom Cabinetry & Millwork</li>
+                            <li>False Ceiling & Lighting Design</li>
+                            <li>Premium Flooring & Wall Finishes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-choose-us page-section">
+            <div class="container">
+                <div class="reveal-up" style="text-align: center; margin-bottom: 80px; position: relative; z-index: 2;">
+                    <span class="overline" style="color: var(--accent-tan);">The SDP Advantage</span>
+                    <h2 style="color: white;">Why Build with Us?</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card reveal-up">
+                        <h4>Transparency</h4>
+                        <p>Detailed estimations, no hidden costs, and regular progress reports.</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.1s;">
+                        <h4>Precision</h4>
+                        <p>Structural integrity that exceeds local norms and building codes.</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.2s;">
+                        <h4>Quality</h4>
+                        <p>Uncompromised material sourcing and multi-level site inspections.</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.3s;">
+                        <h4>Trust</h4>
+                        <p>A legacy of 20+ years and 100+ successfully delivered projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA SECTION -->
+        <section class="services-cta-strip">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <h3 style="color: white; font-size: 32px; margin: 0;">Ready to start your project?</h3>
+                <a href="index.html#contact" class="btn btn-dark">Get a Free Quote →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <img src="assets/img/logo.png" alt="SDP Associates Logo" class="footer-logo">
+                <p class="footer-desc">Nagpur's premier construction and turnkey project specialists. Building trust through precision and quality since two decades.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">IN</a>
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LI</a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Residential Construction</a></li>
+                    <li><a href="services.html">Commercial Build</a></li>
+                    <li><a href="services.html">Turnkey Delivery</a></li>
+                    <li><a href="services.html">Interior Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Our Work</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h4>Contact Info</h4>
+                <p>Park View 28, Flat No. 202, Sawarkar Nagar, Behind NIT Garden, Nagpur</p>
+                <p class="contact-link">info@sdpassociates.com</p>
+                <p class="contact-link">+91 [To be updated]</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 SDP Associates. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/shared.js"></script>
+</body>
+</html>
