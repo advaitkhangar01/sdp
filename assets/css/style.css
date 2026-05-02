@@ -662,6 +662,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
+    display: block;
 }
 
 .project-item img {
@@ -681,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     padding: 30px;
-    background: linear-gradient(to top, rgba(74, 82, 64, 0.9), transparent);
+    background: linear-gradient(to top, rgba(15, 15, 13, 0.95), rgba(15, 15, 13, 0.4) 60%, transparent);
     transform: translateY(100%);
     transition: var(--transition-smooth);
 }
@@ -693,6 +695,8 @@ h1, h2, h3, h4, h5, h6 {
 .project-overlay h3 {
     font-size: 24px;
     margin-bottom: 5px;
+    color: var(--base-white);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-overlay span {
@@ -771,17 +775,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Blueprint Filler */
 .project-filler.blueprint-filler {
     background-color: transparent;
-    border: 1px solid rgba(200, 184, 154, 0.06);
+    border: 1px solid rgba(200, 184, 154, 0.15);
     background-image: 
-        linear-gradient(rgba(200, 184, 154, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200, 184, 154, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(200, 184, 154, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 184, 154, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
 }
 
 .blueprint-graphic {
     width: 60%;
-    color: var(--primary-olive);
-    opacity: 0.15;
+    color: var(--accent-tan);
+    opacity: 0.5;
 }
 
 .blueprint-graphic svg {
